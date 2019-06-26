@@ -11,7 +11,7 @@ namespace Birthdate
             InitializeComponent();
 
             //var navPage = new NavigationPage(new MainPage());
-            var navPage = new NavigationPage(new GiftIdeasPage());
+            var navPage = new NavigationPage(new MainPage());
 
             MainPage = navPage;
         }

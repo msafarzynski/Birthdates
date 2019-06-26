@@ -5,6 +5,6 @@
         <Label Text="Birthdate" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <Button Text="Calendar" HorizontalOptions="Center" VerticalOptions="Center"/>
         <Button Text="Gift ideas" Clicked="OnGiftIdeasButtonClicked" VerticalOptions="Center"/>
-        <Button Text="Contacts" VerticalOptions="Center"/>
+        <Button Text="People" VerticalOptions="Center"/>
     </StackLayout>
 </ContentPage>

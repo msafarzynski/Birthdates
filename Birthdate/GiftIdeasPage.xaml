@@ -12,7 +12,7 @@
           <ImageCell Text="{Binding Name}"
             Detail="{Binding Description}"
             ignore:ImageSource="{Binding Icon}"
-            Height="75"
+            Height="40"
             TextColor="#005569"/>
         </DataTemplate>
       </ListView.ItemTemplate>
@@ -21,7 +21,7 @@
           <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="5,5,5,5" BackgroundColor="#E2F5F9">
               <Button 
-                      ignore:Image="{Binding StateIcon}"
+                      Text="{Binding Title}"
                       BackgroundColor="Transparent"
                       BorderColor="Transparent"
                       BorderWidth="0"
