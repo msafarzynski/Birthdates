@@ -5,7 +5,7 @@ namespace Birthdate.Domain.Occasions
     {
         public NameDay(Person person, DateTime occasionDate) : base(person, occasionDate)
         {
-            Name = "Namesday";
+            Name = "NameDay";
         }
     }
 }

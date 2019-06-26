@@ -10,7 +10,9 @@ namespace Birthdate
         {
             InitializeComponent();
 
-            var navPage = new NavigationPage(new MainPage());
+            //var navPage = new NavigationPage(new MainPage());
+            var navPage = new NavigationPage(new GiftIdeasPage());
+
             MainPage = navPage;
         }
 

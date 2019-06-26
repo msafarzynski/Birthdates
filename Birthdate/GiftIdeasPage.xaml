@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Birthdate.GiftIdeasPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Birthdate.GiftIdeasPage" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ignore="https://galasoft.ch/ignore" mc:Ignorable="ignore">
     <ContentPage.Content>
         
-    <ListView  x:Name="OccasionsGifts"
+    <ListView  x:Name="OccasionsGiftss"
     GroupDisplayBinding="{Binding Title}"
+    GroupShortNameBinding="{Binding Title}"
     RowHeight="75"
-<!--    GroupShortNameBinding="{Binding ShortName}"-->
     IsGroupingEnabled="true">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ImageCell Text="{Binding Name}"
             Detail="{Binding Description}"
-            ImageSource="{Binding Icon}"
+            ignore:ImageSource="{Binding Icon}"
             Height="75"
             TextColor="#005569"/>
         </DataTemplate>
@@ -21,7 +21,7 @@
           <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="5,5,5,5" BackgroundColor="#E2F5F9">
               <Button 
-                      Image="{Binding StateIcon}"
+                      ignore:Image="{Binding StateIcon}"
                       BackgroundColor="Transparent"
                       BorderColor="Transparent"
                       BorderWidth="0"

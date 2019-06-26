@@ -32,7 +32,14 @@ namespace Birthdate.Domain
         public OccasionGiftGroup(Occasion occasion, bool expanded = false)
         {
             Title = occasion.Person.Name + " " + occasion.Name;
+            Occasion = occasion;
             Expanded = expanded;
+        }
+
+        protected override event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
