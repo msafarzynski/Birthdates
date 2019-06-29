@@ -22,5 +22,10 @@ namespace Birthdate
         {
             await Navigation.PushAsync(new GiftIdeasPage());
         }
+
+        async void OnCalendarButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new CalendarView());
+        }
     }
 }

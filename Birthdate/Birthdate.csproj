@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,16 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="GiftIdeas.cs" />
-    <Compile Remove="GiftIdeas.xaml.cs" />
-    <Compile Remove="GiftIdeas.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="GiftIdeas.xaml" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.540366" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="17.1.0.53" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
