@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Birthdate" x:Class="Birthdate.MainPage">
-    <StackLayout>
+    <StackLayout Margin="100">
         <!-- Place new controls here -->
-        <Label Text="Birthdate" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Calendar" HorizontalOptions="Center" VerticalOptions="Center"/>
-        <Button Text="Gift ideas" Clicked="OnGiftIdeasButtonClicked" VerticalOptions="Center"/>
-        <Button Text="People" VerticalOptions="Center"/>
+        <Label Text="Birthdate" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" />
+        <StackLayout Spacing="0"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+            <Button Text="Calendar" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Gift ideas" Clicked="OnGiftIdeasButtonClicked" VerticalOptions="Center"/>
+            <Button Text="People" VerticalOptions="Center"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

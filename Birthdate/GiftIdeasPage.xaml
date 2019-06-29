@@ -4,16 +4,18 @@
         
     <ListView  x:Name="OccasionsGiftss"
     GroupDisplayBinding="{Binding Title}"
-    GroupShortNameBinding="{Binding Title}"
+    
     RowHeight="75"
     IsGroupingEnabled="true">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ImageCell Text="{Binding Name}"
+          <TextCell Text="{Binding Name}"
             Detail="{Binding Description}"
-            ignore:ImageSource="{Binding Icon}"
             Height="40"
             TextColor="#005569"/>
+                        
+
+                    
         </DataTemplate>
       </ListView.ItemTemplate>
       <ListView.GroupHeaderTemplate>
