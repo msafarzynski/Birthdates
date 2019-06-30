@@ -8,6 +8,8 @@ namespace Birthdate
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTE1MzUzQDMxMzcyZTMxMmUzMEVNQ3JHQVhncFd3UmttMUV5Tkx0NVNFZ255bUdGdkZycHZpaXpqa2tudzQ9");
+
             InitializeComponent();
 
             //var navPage = new NavigationPage(new MainPage());

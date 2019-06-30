@@ -31,7 +31,7 @@ namespace Birthdate.Domain
 
         public OccasionGiftGroup(Occasion occasion, bool expanded = false)
         {
-            Title = occasion.Person.Name + " " + occasion.Name;
+            Title = occasion.Person.Name + "'s " + occasion.Name;
             Occasion = occasion;
             Expanded = expanded;
         }

@@ -8,8 +8,6 @@ namespace Birthdate
         public CalendarView()
         {
             InitializeComponent();
-            SfCalendar calendar = new SfCalendar();
-            this.Content = calendar;
         }
     }
 }

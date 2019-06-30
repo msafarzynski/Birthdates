@@ -18,5 +18,6 @@
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Domain\Occasions\" />
+    <Folder Include="Dao\" />
   </ItemGroup>
 </Project>
